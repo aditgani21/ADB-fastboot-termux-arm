@@ -11,8 +11,13 @@ downpath="$PREFIX/tmp/adbtemp"
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/adb -P $downpath/ -q
 echo -e "\e[32m[*] \e[34mDownloading binaries..."
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/adb.bin -P $downpath/ -q
+echo -ne '#####                     (33%)\r'
+sleep 1
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/adb.bin-armeabi -P $downpath/ -q
+echo -ne '######                     (40%)\r'
+sleep 1
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/fastboot -P $downpath/ -q
+
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/fastboot-armeabi -P $downpath/ -q
 echo -ne '#######################   (100%)\r'
 echo -e "\e[32m[*] \e[34mCopying files..."

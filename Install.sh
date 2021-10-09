@@ -14,10 +14,11 @@ wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/adb.bin 
 echo -ne '#####                     (33%)\r'
 sleep 1
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/adb.bin-armeabi -P $downpath/ -q
-echo -ne '######                     (40%)\r'
+echo -ne '#######                   (60%)\r'
 sleep 1
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/fastboot -P $downpath/ -q
-
+echo -ne '########                  (86%)\r'
+sleep 1
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/fastboot-armeabi -P $downpath/ -q
 echo -ne '#######################   (100%)\r'
 echo -e "\e[32m[*] \e[34mCopying files..."

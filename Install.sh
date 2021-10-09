@@ -14,6 +14,7 @@ wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/adb.bin 
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/adb.bin-armeabi -P $downpath/ -q
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/fastboot -P $downpath/ -q
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/fastboot-armeabi -P $downpath/ -q
+echo -ne '#######################   (100%)\r'
 echo -e "\e[32m[*] \e[34mCopying files..."
 cp $downpath/* $PREFIX/bin
 echo -e "\e[32m[*] \e[34mSetting execution permissions..."

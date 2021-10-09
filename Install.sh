@@ -37,7 +37,7 @@ echo -ne '#######                   (60%)\r'
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/fastboot -P $downpath/ -q
 echo -ne '########                  (86%)\r'
 wget https://github.com/aditgani21/ADB-fastboot-termux-arm/raw/main/bin/fastboot-armeabi -P $downpath/ -q
-echo -ne '#######################   (100%)\r'
+echo -ne '#############   (100%)\r'
 echo -ne '\n'
 echo -e "\e[32m[*] \e[34mCopying files..."
 cp $downpath/* $PREFIX/bin
@@ -54,6 +54,17 @@ echo -e "\e[32m[*] \e[34mCleaning up..."
 cd $directory
 rm -rf $downpath
 rm -rf Install.sh
+echo -ne '#                    (10%)\r'
+echo -ne '##                    (20%)\r'
+echo -ne '###                    (30%)\r'
+echo -ne '######                   (40%)\r'
+echo -ne '#######                    (50%)\r'
+echo -ne '########                    (60%)\r'
+echo -ne '#########                   (70%)\r'
+echo -ne '##########                    (80%)\r'
+echo -ne '###########                    (90%)\r'
+echo -ne '#############                    (100%)\r'
+echo -ne '\n'
 echo
 echo -e "\e[32mTools were successfully installed!\e[39m"
 echo
